@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse String</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kavoon&family=Lobster&family=Orbitron:wght@600&family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">PW Skill's Delayed String Reversal</h1>
+        <label for="inputField">Enter a String:</label>
+        <input type="text" id="inputField">
+        <br>
+        <button onclick="reverseString()">Reverse after 2 seconds</button>
+        <br>
+        <h2 class="heading">Reversed String</h2>
+        <div id="output"></div>
+    </div>
+
+</body>
+<script>
+    function reverseString() {
+        // get input string from text field
+        let input = document.getElementById("inputField").value;
+
+        // delay the execution by 2 second
+        setTimeout(function(){
+        // reverse the string
+        let reversedString = input.split("").reverse().join("");
+        // display the reversed string
+        document.getElementById("output").innerHTML = reversedString;
+        },2000
+        );
+    }
+</script>
+</html>

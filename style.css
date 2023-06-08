@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kavoon', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    height: 100vh;
+    background-color: lavender;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10%;
+    background-color: lightblue;
+}
+button {
+    background-color: lightpink;
+    font-size: larger;
+    padding: 5px 15px;
+    border-radius: 10px;
+
+}
+#output {
+    font-size: x-large;
+    font-weight: 900;
+    color: darkslategrey;
+}
+label {
+    font-size: larger;
+    font-weight: 700;
+}
+input {
+    size: 30px;
+    font-size: large;
+}
+.heading {
+    font-weight: 700;
+    color: brown;
+}
